@@ -1,5 +1,5 @@
 {
-  "name": "backend",
+  "name": "tarefa",
   "version": "1.0.0",
   "description": "",
   "license": "ISC",
@@ -7,22 +7,17 @@
   "type": "commonjs",
   "main": "./src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon"
+    "start": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "bcrypt": "^6.0.0",
     "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "mysql2": "^3.24.2",
     "nodemon": "^3.1.14",
-    "sequelize": "^6.37.8"
-  },
-  "allowScripts": {
-    "bcrypt@6.0.0": true
-  },
-  "devDependencies": {
-    "dotenv": "^17.4.2",
+    "sequelize": "^6.37.8",
     "sequelize-cli": "^6.6.5"
   }
 }
