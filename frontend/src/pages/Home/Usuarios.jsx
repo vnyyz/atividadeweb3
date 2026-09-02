@@ -16,4 +16,17 @@ function Usuarios(){
         };
         fetchUsuarios();
     },[]);  
+    return(
+        <div className="page-conteiner">
+            <h1>Lista de Usuarios</h1>
+
+            <ul>
+                {usuarios.map(user =>(
+                    <li key={user.id}>
+                        <span>{user.nome}</span>
+                    </li>
+                ))}
+            </ul>
+        </div>
+    );
 }
